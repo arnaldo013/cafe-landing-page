@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.beranda {
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.beranda-content {
+    text-align: center;
+    display: block;
+    padding-top: 100px;
+
+}
+
+.btn {
+    font-size: 20px;
+    color: blanchedalmond;
+    background-color: #4d260d;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #4d260d;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: wheat;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.logo-name {
+    font-size: 20px;
+    padding-right: 20px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.titleText {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+    text-align: center;
+
+}
+
+.titleText>h1,
+.place {
+    margin: 10px;
+    padding: 2px;
+}
+
+.place {
+    background: lightgray;
+    display: inline-block;
+}
+
+.place h2 {
+    font-size: 22px;
+}
+
+.place p {
+    font-size: 18px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 750px;
+
+
+}
+
+.titleText {
+    font-size: 35px;
+}
+
+.facility {
+    justify-content: center;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.coffee {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.box {
+    float: left;
+    padding: 30px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.img img {
+    width: 500px;
+
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #4d260d;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 350px;
+}
+
+aside {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.profile-card {
+    width: 400px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline;
+
+}
+
+.about {
+    float: left;
+    display: flex;
+    overflow: auto;
+    padding: 5px;
+}
+
+.card-header {
+    padding-top: 20px;
+}
+
+.pic {
+    padding: 8px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+
+.name {
+    color: gray;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.desc {
+    font-size: 18px;
+
+}
+
+.socmed {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* header,
+    header.sticky {
+        padding: 10px 20px;
+    } */
+
+    header .navbar {
+        display: none;
+    }
+
+    header .navbar.active {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 34px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #d49b78;
+
+    }
+
+    header .navbar li {
+        margin-left: 0;
+
+    }
+
+    header .navbar li a {
+        margin-left: 0;
+        color: #111;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .logo-name {
+        font-size: 40px;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url("/assets/images/menu1.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+
+    }
+
+    .menuToggle.active {
+        background: url("/assets/images/close.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about {
+        display: inline;
+
+    }
+
+    .socmed {
+        padding-left: 0px;
+
+    }
+
+
+}
+
+
+/* .coffee .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.coffee .content .box .img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.coffee .content .box .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
